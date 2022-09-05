@@ -1,41 +1,50 @@
+const recetasPollo = [
+    {id: 1, nombre:"pollo con arroz", ingrediente:"arroz"},
+    {id: 2, nombre:"pollo al horno con papas",ingrediente:"papas"},
+    {id: 3, nombre:"milanesas de pollo con ensalada", ingrediente:"ensalada"},
+    {id: 3, nombre:"pollo arrollado con pure", ingrediente:"jamon"},
+    ];
+    let ingrediente = prompt("Ingrese el ingrediente a buscar arroz, papas , ensalada o jamon");
 
-/*let recetasPollo = [
-{id: 1, nombre:"Pollo con arroz", ingrediente1:"arroz", ingrediente2:"tomate", ingrediente3:"cebolla", calorias: 550, tiempoPrep: 30},
-{id: 2,nombre:"Pollo al horno con papas",ingrediente1:"papas", ingrediente2:"mostaza", ingrediente3:"pimienta",calorias: 650, tiempoPrep: 45},
-{id: 3, nombre:"Pollo arrollado con ensalada", ingrediente1:"jamon", ingrediente2:"queso", ingrediente3:"tomate" ,calorias: 450, tiempoPrep: 35},
-]
+    let filtradosP = recetasPollo.filter(item => item.ingrediente === ingrediente);
+    console.log(filtradosP);
+    
+     /*  const recetasCarne = [
+        {id: 1, nombre:"bifes con verduras", ingrediente:"verduras"},
+        {id: 2, nombre:"carne al horno con papas",ingrediente:"papas"},
+        {id: 3, nombre:"milanesas napolitana con ensalada", ingrediente:"ensalada"},
+        {id: 3, nombre:"estofado", ingrediente:"zapallo"},
+        ];
+        for (const item of recetasCarne){
+        //console.log(item.nombre);*/
+   
+
+ 
+/*
+/*for(const item of recetasCarne){
+  //console.log(item);*/
+
+/*let receta = prompt("Ingrese el ingrediente principal de la receta a buscar pollo/carne");
+
+let mensaje1 = `receta con carne ${recetasCarne.nombre}`;
+let mensaje2 = `receta con pollo ${recetasPollo.nombre}`;
 
 
-recetasPollo.push({id: 4, nombre:"Milanesas maryland" ,ingrediente1:"empanado", ingrediente2:"choclo", ingrediente3:"banana" ,calorias:750 ,tiempoPrep: 50,});
+//while (receta != "ESC") {
+  switch (receta){
+    case "carne":
+        alert(mensaje1);
+    //console.log("Estas  son las recetas con carne " + recetasCarne);
+      break;
 
-//recetasPollo.forEach(item =>console.log(item));
+    case "pollo":
+        alert(mensaje2);
+    console.log("Estas  son las recetas con carne " +  recetasPollo);
+      break;
 
-let ingrediente1 = prompt("Ingrese un ingrediente  ");
-let ingrediente2 = prompt("Ingrese otro ingrediente ");
-let ingrediente3 = prompt("Ingrese otro ingredientes ");
-
-let totalIngredientes = ingrediente1 + ingrediente2 + ingrediente3;
-let encontrada = recetasPollo.filter(item => totalIngredientes === totalIngredientes);
-// alert(encontrada);
-console.log(encontrada);*/
-
-let recetasPollo = [
-    {id: 1, nombre:"Pollo con arroz", ingrediente:"arroz", calorias: 550, tiempoPrep: 30},
-    {id: 2,nombre:"Pollo al horno con papas",ingrediente:"papas", calorias: 650, tiempoPrep: 45},
-    {id: 3, nombre:"Pollo arrollado con ensalada", ingrediente:"queso" ,calorias: 450, tiempoPrep: 35},
-    ]
-    
-    
-    recetasPollo.push({id: 4, nombre:"Milanesas maryland" , ingrediente:"choclo",calorias:750 ,tiempoPrep: 50,});
-    
-    //recetasPollo.forEach(item =>console.log(item));
-    
-    let ingrediente = prompt("Ingrese un ingrediente para su receta con pollo: ¿ arroz, papas o queso? ");
-    
-    let encontrada = recetasPollo.find(item =>item.ingrediente === ingrediente);
-    
-    //alert(encontrada);
-    console.log(encontrada);
-    
-    
+    default:
+      console.log("Receta no encontrada");
+      break;
+    };*/
+  
 
