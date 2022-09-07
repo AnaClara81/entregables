@@ -12,55 +12,82 @@ const recetasPollo = [
       {id: 3, nombre:"milanesas napolitana con ensalada", ingrediente:"ensalada"},
       {id: 4, nombre:"estofado", ingrediente:"zapallo"},
       ];
-      elegirIngrediente();
-      //elegirReceta();  
+
+
+ elegirIngrediente();
+       
      
         
-function elegirIngrediente(){  // muestra por alert el arreglo elegido
+function elegirIngrediente(){  
   let carne = "carne";
   let pollo = "pollo";
-  let receta =prompt("Ingrese el ingrediente principal de su receta" + pollo + "o" + carne);
+  let receta =prompt("Ingrese el ingrediente principal de su receta " + pollo + " o " + carne);
   let mensaje1 = ( Object.values(recetasCarne));
   let mensaje2 = (Object.values(recetasPollo));
         
- if (receta === carne){
-   alert(JSON.stringify( mensaje1));
-   // console.log(Object.values(recetasCarne));
-  }else if (receta === pollo) { 
-        alert(JSON.stringify( mensaje2));
-       // console.log(Object.values(recetasPollo));
-  }else{
-      alert("Receta no encontrada");
+ if(receta === carne){
+  elegirRecetaCarne();
+}else if(receta === pollo){ 
+  elegirRecetaPollo();
+}else{
+   alert("Receta no encontrada");
  }
-
- };
-// una vez elegida la opcion pollo o carne tendria que dar la opcion de elegir la receta de cada cual ... 
-// y mostrar la funcion correspondiente  elegirRecetaCarne() / elegirRecetaPollo()
-
-
-
-
+};
 
 function elegirRecetaCarne(){
    
-   let ingrediente =prompt("Ingrese el ingrediente a buscar verduras, papas , ensalada o zapallo");
+   let ingrediente =prompt("Con que ingrediente desea acompañar la carne? verduras, papas , ensalada o zapallo");
 
    let filtradosP = recetasCarne.filter(item => item.ingrediente === ingrediente);
     filtradosP.forEach(item =>{
-    alert(` con sus ingredientes puede cocinar: ${item.nombre}`);
+    alert(`Con carne y ${ingrediente} puede cocinar: ${item.nombre}`);
     })
   };
 
-  function elegirRecetaPollo(){
+function elegirRecetaPollo(){
    
-    let ingrediente =prompt("Ingrese el ingrediente a buscar arroz, papas , ensalada o jamon");
+    let ingrediente =prompt("Con que ingrediente desea acompañar la pollo? arroz, papas , ensalada o jamon");
  
     let filtradosP = recetasPollo.filter(item => item.ingrediente === ingrediente);
      filtradosP.forEach(item =>{
-     alert(` con sus ingredientes puede cocinar: ${item.nombre}`);
+     alert(`Con pollo y ${ingrediente}  puede cocinar: ${item.nombre}`);
      })
    };
  
 
-
+  
+   
+   
+   let ingredienteUno = (prompt("Ingrese proteina (tipo de carne)")) ;
+   let cantidadUno = parseInt(prompt("Ingrese la cantidad de proteina")) ;
+   let ingredienteDos = (prompt("Ingrese carbohidratos cereales/ vegetales")) ;
+   let cantidadDos = parseInt(prompt("Ingrese la cantidad de carbohidratos")) ;
+   let ingredienteTres = (prompt("Ingrese la materia grasa aceite/manteca")) ;
+   let cantidadTres = parseInt(prompt("Ingrese la cantidad de materia grasa")) ;
+   let cantidadProteina = cantidadUno * 4;
+   let cantidadCarboH = cantidadDos * 4;
+   let cantidadGrasa = cantidadTres * 9;
+   
+   let totalCalorias = cantidadProteina + cantidadCarboH + cantidadGrasa;
+   
+   alert (`el total de calorias es ${totalCalorias}`);
+   
+   
+   function cantPorciones(){
+       if(cantidadUno <= 250){
+       alert("CANTIDADES PARA UNA PORCION");
+   }else if (cantidadUno >= 250 && cantidadUno <= 500){
+       alert("CANTIDADES PARA DOS PORCIONES");
+   }else if (cantidadUno >= 500 && cantidadUno <= 750){
+       alert("CANTIDADES PARA TRES PORCIONES");
+   }else if (cantidadUno >= 750 && cantidadUno <= 1000){
+       alert("CANTIDADES PARA CUATRO PORCIONES");
+   }else{
+       alert("Cantidad  no contemplada");
+   }
+   };
+   
+   
+   
+   cantPorciones();
 
