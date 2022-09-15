@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+  <div id="principio" class ="img-fluid">
+    <h1>Que cocinamos hoy?</h1>
+        <div>
+            <h3>"Ingrese el ingrediente principal de su receta pollo o cerdo</h3>
+            <form id="formularioReceta"  role="search">
+                <input id="receta" class="buscar" type="search" placeholder="Ingrediente principal" aria-label="Search">
+                <button class="btn btn-success" type="submit">Buscar</button>
+             </form>
+              <div id="recetaSugerida">
+                <h3>"Con que ingrediente desea acompañar el </h3>
+                <form id="formularioReceta" class="d-flex" role="search">
+                    <input id="receta" class="buscar" type="search" placeholder="Receta" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Buscar</button>
+                  </form> 
+              </div>
+        </div>
+      </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a id="btnCarne" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Carnes
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><button id ="contenedor1" class="dropdown-item" href="#">Cerdo</button></li>
+                    <li><button id ="contenedor2" class="dropdown-item" href="#">Pollo</button></li>
+                    <li><a id ="contenedor3" class="dropdown-item" href="#">Vaca</a></li>
+                    <li><a id ="contenedor4" class="dropdown-item" href="#">Pescado</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Guarniciones
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Verduras</a></li>
+                    <li><a class="dropdown-item" href="#">Legumbres</a></li>
+                    <li><a class="dropdown-item" href="#">Pastas</a></li>
+                    <li><a class="dropdown-item" href="#">Arroces</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Postres
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mouses</a></li>
+                    <li><a class="dropdown-item" href="#">Tartas y tortas</a></li>
+                    <li><a class="dropdown-item" href="#">Horneados</a></li>
+                    <li><a class="dropdown-item" href="#">Individuales</a></li>
+                  </ul>
+                </li>
+              
+              </ul>
+             
+            </div>
+          </div>
+        </nav>
+<div id="contenedorReceta">
+
+</div>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

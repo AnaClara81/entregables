@@ -1,0 +1,13 @@
+#principio{
+ background-image:url(./image/fondoPrincipio1.jpg);
+ background-size: cover;
+ height:auto;
+ width:100%;
+ margin: auto;
+ color:ivory;
+ text-align: center;
+};
+
+#formularioReceta{
+     display: inline-flex;
+};
