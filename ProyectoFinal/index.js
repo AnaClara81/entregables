@@ -36,22 +36,46 @@ function elegirIngrediente(){
 
 elegirIngrediente();
 
+
 function elegirRecetaPollo(){
    let contenedor = document.getElementById("recetaSugerida");
-   let ingrediente = prompt("Con que ingrediente desea acompañar la pollo? arroz, papas , ensalada o jamon");
-   let filtradosPollo = recetasPollo.filter(item => item.ingrediente === ingrediente);
-   
-   for (const receta of filtradosPollo) {
+   let ingrediente = document.getElementById("inputReceta") ;
+  // let boton = document.createElement("btn-acompañar");
+   //let receta = document.getElementById("formularioReceta");
+   let div = document.createElement("recetaSugerida");
+   let HTMLFormElement = document.createElement("input");
+   div.innerHTML =`<h3>"Con que ingrediente desea acompañar el pollo? 
+                         arroz, papas , ensalada o jamon </h3>
+                    <input id= "input">${HTMLFormElement.autocomplete}</input>
+                    <button id= "btn-acompañar"> Buscar </button>`
+   div.className = "recetaSugerida";        
+   contenedor.append(div);
+
+  
+    let boton = document.getElementById("btn-acompañar");
+    boton.addEventListener("click",filtrarRecetasPollo);
+    console.log("hola" );
+  
+    }
+    ;
+    
+
+   function filtrarRecetasPollo(){
+    let contenedor = document.getElementById("recetaSugerida");
+    let ingrediente = document.getElementById("input") ;
+    let filtradosPollo = recetasPollo.filter(item => item.ingrediente === ingrediente);
+    for (const receta of filtradosPollo) {
      let div = document.createElement("div");
     div.innerHTML =`<h2>Con pollo y ${receta.ingrediente} podria preparar : </h2>
                     <h4>Receta numero:${receta.id}</h4>
                     <h3>Nombre:${receta.nombre}</h3>  `
     div.className = "recetaSugerida";            
     contenedor.append(div);
-
-  
+    console.log(ingrediente );
     }
- };
+  };
+   
+ 
 
  function elegirRecetaCerdo(){
   let contenedor = document.getElementById("recetaSugerida");
