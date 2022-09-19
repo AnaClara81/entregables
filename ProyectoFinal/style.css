@@ -11,3 +11,33 @@
 #formularioReceta{
      display: inline-flex;
 };
+#contenedorReceta{
+   background-image:url(./image/fondoPrincipio.jpg);
+}
+.esta{
+    
+    display: block;
+}
+     
+.noEsta{
+ display: none;
+}
+
+#conteiner{
+    background-image: url(./image/cuenta.jpg);
+    background-size: cover;
+}
+
+#formConteiner{
+    margin-left: 630px;
+    padding:50px;
+    width:40% ;
+    display:grid;
+    align-content: flex-end;
+}
+.negrita{
+ font-style:italic;
+ font: 1.5em sans-serif;
+ font:bolder;
+}
+ 
