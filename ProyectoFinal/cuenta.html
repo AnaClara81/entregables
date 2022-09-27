@@ -16,24 +16,24 @@
                 <li ><a href="http://">Recuperar mi contraseña</a></li>
             </ul>
         
-        <form>
+        <form id="form-cuenta">
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label negrita">Nombre</label>
-            <input id="nombre" type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+            <input id="nombre" type="text" class="form-control" id="Input" placeholder="Nombre">
           </div>
           <div class="mb-3">
             <label for="formGroupExampleInput2" class="form-label negrita">Apellido</label>
-            <input id="apellido" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
+            <input id="apellido" type="text" class="form-control" id="Input" placeholder="Apellido">
           </div>
           
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label negrita">Email</label>
-          <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input id="email" type="email" class="form-control" id="Input" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text negrita" >Tu correo no se compartirá</div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label negrita">Password</label>
-          <input id="password" type="password" class="form-control hidden" id="exampleInputPassword1">
+          <input id="password" type="password" class="form-control hidden" id="Input">
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -43,7 +43,7 @@
       </form>
     </div> 
     </div>
-  <!--   <div id="conteinerUsuarios">
+ <div id="conteinerUsuarios">
         <h2>Usuarios</h2>
         <table class="table table-hover" id="tablaUsuarios">
             <thead>
@@ -57,8 +57,9 @@
             <tbody>
                 
             </tbody>
-        </table>
-    </div> -->
+        </table> 
+    </div>  
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./cuenta.js"></script>
     <script src="./index.js"></script>
 </body>

@@ -1,22 +1,24 @@
  let usuarios = [];
 
-
+ 
 function agregarUsuarios(nombre, apellido, email, password){
-
-    const nuevoUsuario = {
-        nombre : nombre,
-        apellido : apellido,
-        email  :email,
-        password : password,
-};
+  const nuevoUsuario = {
+    nombre : nombre,
+    apellido : apellido,
+    email  :email,
+    password : password,
+  };
+    
 console.log(nuevoUsuario);
 usuarios.push(nuevoUsuario);
 guardar_localStorage(usuarios);
 }
 
 
+
 function getUsuarios(){
-    let listaGuardada = localStorage.getItem("nuevoUsuario");
+    let listaGuardada = localStorage.getItem("listaUsuarios");
+        localStorage.getItem("nuevoUsuario");
    if(listaGuardada === null){
     usuarios = [];
    }else{
@@ -27,41 +29,51 @@ function getUsuarios(){
 
 
 function guardar_localStorage(usuarios){
+    let lista =  getUsuarios();
+    localStorage.setItem("listaUsuarios",JSON.stringify (usuarios));
     localStorage.setItem("nuevoUsuario", JSON.stringify(usuarios));
-} 
+}
 
 
 
 
-
-// imprimirUsuarios()    
-  //funcionalidad de crear cuenta
+imprimirUsuarios()    
+//funcionalidad de crear cuenta
     
   let btnGuardarUsuario = document.getElementById("btn-guardarUsuario")
     btnGuardarUsuario.addEventListener("click",guardarUsuario);
-   // imprimirUsuarios()    
+  imprimirUsuarios()    
     
     function guardarUsuario(e){
        e.preventDefault();
-       let formulario = e.target
-
+      let formulario = e.target
+      let inputForm = document.getElementById("form-cuenta")
       let nombre = document.getElementById("nombre").value;
       let apellido = document.getElementById("apellido").value;
       let email = document.getElementById("email").value;
       let password = document.getElementById("password").value;
        
        agregarUsuarios(nombre, apellido, email, password)
-
-      alert(`Bienvenid@ ${nombre} tu cuenta se creo correctamente`)
+       
+       Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title:`Bienvenid@ ${nombre} tu cuenta se creo correctamente`,
+        showConfirmButton: false,
+        timer: 3000,
+      })
+      
+      inputForm.reset();
+    //  alert(`Bienvenid@ ${nombre} tu cuenta se creo correctamente`)
       // imprimirUsuarios()
-    }; 
+    };  
 
 
- /*    function imprimirUsuarios(){
+    function imprimirUsuarios(){
        let lista =  getUsuarios();
         tbody = document.querySelector("#tablaUsuarios tbody");
         
-        tbody.innerHTML = "";
+        //tbody.innerHTML = "";
 
         for(let i = 0; i< lista.length; i++){
           let row = tbody.insertRow(i);
@@ -81,5 +93,5 @@ function guardar_localStorage(usuarios){
           tbody.appendChild(row);
         }
       };
-      
-     */
+       
+     

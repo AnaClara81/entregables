@@ -58,34 +58,47 @@ function mostrarRecetas(){
     
       let formulario = document.getElementById("formularioReceta");
       let contenedor = document.getElementById("recetaSugerida");
+      let contenedorGeneral = document.getElementById("contenedorReceta");
       formulario.addEventListener("submit",(e)=>{
         e.preventDefault();
       
         let inputs = e.target.children;
-       //console.log(inputs[0].value);
+      /*  //console.log(inputs[0].value);
           if(inputs[0].value === "cerdo" ){ 
             mostrarRecetaCerdo()
+           
         }else if(inputs[0].value === "pollo"){ 
             mostrarRecetaPollo()
-                   
+            
         }else if(inputs[0].value === "pescado"){
           mostrarRecetaPescado()
          
         }else if(inputs[0].value === ""){
-           contenedor.innerHTML = "" ;
+           
         }else{
            alert("Receta no encontrada");
          }
         })
-    };
-    
-
+    }; */
+    //OPERADOR TERNARIO
+    inputs[0].value === "cerdo" ? mostrarRecetaCerdo():
+    inputs[0].value === "pollo" ? mostrarRecetaPollo():
+    inputs[0].value === "pescado" ? mostrarRecetaPescado():
+   //SWEETALERT
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'No se encontro lo que buscabas!',
+     
+    })
+  })
+}
 
 mostrarRecetas(); 
 
 
 function mostrarRecetaCerdo(){
-  let contenedor = document.getElementById("contenedorReceta");
+  let contenedor = document.getElementById("contenedorReceta1");
   let ingrediente = document.getElementById("inputReceta");
  let receta = recetasCerdo.filter(item => item.ingrediente === ingrediente);
   for (const receta of recetasCerdo) {
@@ -100,7 +113,7 @@ let div = document.createElement("div");
                  </div>
                 </div> 
                 </div>`
-div.className = "contenedorReceta";
+div.className = "contenedorReceta1";
 contenedor.append(div);     
 //contenedor.innerHTML = "" ;  
 }
@@ -111,7 +124,7 @@ receta.addEventListener("mouseover", () => {
  div.className = "noEsta"; */
 
 function mostrarRecetaPollo(){
-  let contenedor = document.getElementById("contenedorReceta");
+  let contenedor = document.getElementById("contenedorReceta2");
   let ingrediente = document.getElementById("inputReceta");
   let receta = recetasCerdo.filter(item => item.ingrediente === ingrediente);
   
@@ -123,11 +136,12 @@ function mostrarRecetaPollo(){
                    <div class="card-body">
                     <h5 class="card-title">${receta.nombre}</h5>
                     <p class="card-text">${receta.procedimiento}</p>
-                    <a href="#" class="btn btn-primary">Leer mas</a>
+                    <a href="#" class="btn btn-success">Leer mas</a>
+                   
                     </div>
                    </div> 
                    </div>`
-   div.className = "contenedorReceta";
+   div.className = "contenedorReceta2";
    contenedor.append(div);
    //contenedor.innerHTML = "" ;  
    }
@@ -135,7 +149,7 @@ function mostrarRecetaPollo(){
 
 
 function mostrarRecetaPescado(){
-  let contenedor = document.getElementById("contenedorReceta");
+  let contenedor = document.getElementById("contenedorReceta3");
   let ingrediente = document.getElementById("inputReceta");
   let receta = recetasCerdo.filter(item => item.ingrediente === ingrediente);
   
@@ -147,11 +161,12 @@ function mostrarRecetaPescado(){
                    <div class="card-body">
                     <h5 class="card-title">${receta.nombre}</h5>
                     <p class="card-text">${receta.procedimiento}</p>
-                    <a href="#" class="btn btn-primary">Leer mas</a>
+                    <a href="#" class="btn btn-success">Leer mas</a>
+                   
                     </div>
                    </div> 
                    </div>`
-   div.className = "contenedorReceta";
+   div.className = "contenedorReceta3";
    contenedor.append(div); 
   // contenedor.innerHTML = "" ;  
    }
