@@ -18,46 +18,101 @@
         <div class="titulo">
             <h1>Cursos</h1>
             </div>
-            <nav>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active text-body" aria-current="page" href="#">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="#">Ofertas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item ">
-                        <button class="nav-link text-body " id="boton-carrito" href="#">Carrito <i class="fa-solid fa-cart-shopping"></i> <span id="contador-carrito">0</span> </a>
-                           
-                    </li>
-                </ul>
-            </nav>
+            
             </header>
-            <main id="producto-contenedor">
+            <main id="producto-contenedor" ></main>
 
-  
-                <div class="modal-container" id="modal_container">
-                  <div class="modal-carrito">
-                    <div id="carrito-contenedor">
-                    <h3>Carrito</h3>
-                    <button id="cerrar">Cerrar</button>
-                    
-
+                <section class="shopping-cart">
+                    <div class="container">
+                        <h1 class="text-center">CARRITO</h1>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="shopping-cart-header">
+                                    <h6>Producto</h6>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="shopping-cart-header">
+                                    <h6 class="text-truncate">Precio</h6>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="shopping-cart-header">
+                                    <h6>Cantidad</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ? START SHOPPING CART ITEMS -->
+                        <div class="shopping-cart-items shoppingCartItemsContainer">
+                        </div>
+                        <!-- ? END SHOPPING CART ITEMS -->
+            
+                        <!-- START TOTAL -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="shopping-cart-total d-flex align-items-center">
+                                    <p class="mb-0">Total</p>
+                                    <p class="ml-4 mb-0 shoppingCartTotal">$</p>
+                                    <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                        data-delay="2000">
+                                        <div class="toast-header">
+                                            <span>✅</span>
+                                            <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="toast-body text-white">
+                                            Se aumentó correctamente la cantidad
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                                        data-target="#comprarModal">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- END TOTAL -->
+            
+                        <!-- START MODAL COMPRA -->
+                        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Pronto recibirá su pedido</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MODAL COMPRA -->
+            
+            
                     </div>
+            
+                </section>
+                
+
+                    
                   
-                <p class="precioProducto">Precio Total: $<span id="precioTotal">0</span></p>
-                <button id="vaciar-carrito" class='vaciar-carrito'>Vaciar Carrito</button>
-                </div>
+                
             </div>
-                </main>
-                <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="stock.js" ></script>
 <script src="carritoIndex.js"></script>
-<script src="modal.js"></script>
-<script src="carrito.js" ></script>
+
+
 
 </body>
 </html>

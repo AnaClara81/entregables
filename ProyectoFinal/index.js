@@ -22,7 +22,7 @@ let recetaPescado2 = new Receta ( 2, "Fish and chips","Filet de pescado  pasados
 let recetaPescado3 = new Receta ( 3, "Salmon a la plancha ","Salpimentar la enca de salmon y cocinar a la plancha durante 8 minutos por lado", "salmon.jpg");   
 let recetaPescado4 = new Receta ( 4, "Besugo a la parrilla ","Macerar el pescado con aceite de oliva, perejil, ajo, sal , pimienta y limon durante dos horas o mas en la heladera. Luego colocar en la prensa para la parrilla o envolver en papel aluminio. Cocinar a la parrilla", "pescadoParrilla.jpg");       
     
-         */
+         
 
 const recetasPollo = [
   {id: 1, nombre:"Pollo con arroz", procedimiento: "Cocinar el pollo en salsa de tomate y agregarle arrroz cocido a gusto", imagen:src="./image/arroz.jpg" },
@@ -47,7 +47,7 @@ const recetasCerdo = [
       {id: 4, nombre:"Besugo a la parrilla ", procedimiento:"Macerar el pescado con aceite de oliva, perejil, ajo, sal , pimienta y limon durante dos horas o mas en la heladera. Luego colocar en la prensa para la parrilla o envolver en papel aluminio. Cocinar a la parrilla",imagen:src="./image/pescadoParrilla.jpg"},
     
     ];
-     
+     */
  
 
 
@@ -109,7 +109,7 @@ let div = document.createElement("div");
                 <div class="card-body">
                  <h5 class="card-title">${receta.nombre}</h5>
                  <p class="card-text">${receta.procedimiento}</p>
-                 <a href="#" class="btn btn-success">Leer mas</a>
+                 <a href="${receta.pagina}" class="btn btn-success">Leer mas</a>
                  </div>
                 </div> 
                 </div>`
