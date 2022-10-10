@@ -62,181 +62,63 @@ color: black;
  font: 1.5em sans-serif;
  font:bolder;
 }
-
+.col-sm-6 {
+    padding-top: 10px;
+}
 .curso1{
-   background-image:url(./image/batchcooking.jpg) ;
-   
+   background-image:url(./carrito/image/batchcooking.jpg) ;
+  
 }
 .curso2{
-    background-image:url(./image/cookies.jpg) ;
+    background-image:url(./carrito/image/cookies.jpg) ;
+    
  }
  .curso3{
-    background-image:url(./image/pizza.jpg) ;
+    background-image:url(./carrito/image/pizza.jpg) ;
+    
  }
  .curso4{
-    background-image:url(./image/pastas.jpg) ;
+    background-image:url(./carrito/image/pastas.jpg) ;
+    
  }
 
 .texto{
-
- text-shadow: 0 0 0.2em rgb(11, 11, 11), 0 0 0.2em rgb(11, 11, 11);
- 
-   color:white ;
-   
-   }
-header{
-height: 5rem;
-display: flex;
-justify-content: space-between;
-align-items: center;
-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-color: #000;
-}
-header nav {
-    position: relative;
-    right: 30px;
-}
-
-header h1{
-position: relative;
-left: 20px;
-}
-
-
-#producto-contenedor  {
-width: 80%;
-float: left;
-margin: 90px auto;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-} 
-
-
-.card .card-image .card-title {
-color: dodgerblue;
-position: unset;
-}  
-
-.card{
-margin: 20px;
-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 25px 0px;
+text-shadow: 0 0 0.2em rgb(11, 11, 11), 0 0 0.2em rgb(11, 11, 11);
+color:white ;
 }
 
 
 
-
-/* Modal */
-.modal-container{
-
-display: flex;
-align-items: center;
-justify-content: center;
-position: fixed; 
-background-color: transparent;
-width: 100%;
-height: 100vh;
-visibility: hidden;
-transition: opacity 0.3s ease;
-border-radius: 10px ;
-z-index: 100;
-} 
-
-/* hacer visible el modal  */
-.modal-active {
-opacity: 1;
-visibility: visible;
-z-index: 5;
-}
-
-.modal-carrito{
-width: 30rem;
-height:auto;
-background-color: rgb(247, 164, 164);
-
-}
-
-
-.productoEnCarrito {
-border-left: 5px solid lightblue;
-border-bottom-left-radius: 3px;
-border-top-left-radius: 3px;
-margin: 5px 0;
-padding: 5px 10px;
-display: flex;
-justify-content: space-between;
-}
-
-.boton-eliminar {
-background-color: rgb(139, 183, 244);
-color: rgb(5, 11, 14);
-border: none;
-font-size: 25px;
-}
-
-
-.procedimiento{
-margin-top: 25px;
-background-color: aqua;
-}
-
-
-/* ? SHOPPING CART */
-.item {
-    border: 2px solid #000;
-    padding: 10px;
-    border-radius: 20px;
-  }
+#contenedorGuardada0 {
+    background-color: aqua;
+   width:45%;
+   height:60%;
+   display: inline-block;
   
-  .item-title {
-    text-transform: uppercase;
+}
+
+#contenedorGuardada1 {
+    background-color:burlywood;
+    width:45%;
+    height:60%;
+    display: inline-block;
+ }
+img{
+    max-width:70%;
+    max-height: 70%;
+}
+/* .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+   /* max-width: 300px;
+    margin: auto;
     text-align: center;
-    font-weight: 600;
-  }
-  
-  .item-image {
-    height: 300px;
-    width: 100%;
-  }
-  
-  .item-details {
-    display:block;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0px 15px;
-  }
-  
-  .item-details > .item-price {
-    margin: 0;
-  }
-  
-  /* ? SHOPPING CART */
-  .shopping-cart-items {
-    padding: 20px 0px;
-  }
-  
-  .shopping-cart-header {
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .shopping-cart-image {
-    max-width: 80px;
-    border-radius: 20px;
-  }
-  
-  .shopping-cart-quantity-input {
-    max-width: 45px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #eee;
-    padding: 5px;
-  }
-  
-  .shopping-cart-total {
-    min-height: 96px;
-  }
-  .shopping-cart{
-    display: block;
-    justify-content: center;
-  }
- 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+   
+   }*/
+   
+   .card > img{
+    width: 90%;
+    height: 250px;
+   margin-left: 20px;
+   }

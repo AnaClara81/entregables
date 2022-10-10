@@ -63,27 +63,14 @@ function mostrarRecetas(){
         e.preventDefault();
       
         let inputs = e.target.children;
-      /*  //console.log(inputs[0].value);
-          if(inputs[0].value === "cerdo" ){ 
-            mostrarRecetaCerdo()
-           
-        }else if(inputs[0].value === "pollo"){ 
-            mostrarRecetaPollo()
-            
-        }else if(inputs[0].value === "pescado"){
-          mostrarRecetaPescado()
-         
-        }else if(inputs[0].value === ""){
-           
-        }else{
-           alert("Receta no encontrada");
-         }
-        })
-    }; */
+      
     //OPERADOR TERNARIO
-    inputs[0].value === "cerdo" ? mostrarRecetaCerdo():
+    inputs[0].value === "cerdo" ? mostrarRecetaCerdo(): 
+     
     inputs[0].value === "pollo" ? mostrarRecetaPollo():
+
     inputs[0].value === "pescado" ? mostrarRecetaPescado():
+ 
    //SWEETALERT
     Swal.fire({
       icon: 'error',
@@ -100,6 +87,7 @@ mostrarRecetas();
 function mostrarRecetaCerdo(){
   let contenedor = document.getElementById("contenedorReceta1");
   let ingrediente = document.getElementById("inputReceta");
+  contenedor.innerHTML = "" ;  
  let receta = recetasCerdo.filter(item => item.ingrediente === ingrediente);
   for (const receta of recetasCerdo) {
 let div = document.createElement("div");
@@ -115,17 +103,14 @@ let div = document.createElement("div");
                 </div>`
 div.className = "contenedorReceta1";
 contenedor.append(div);     
-//contenedor.innerHTML = "" ;  
+
 }
 }; 
-/* let receta = document.getElementById("titulo");
-
-receta.addEventListener("mouseover", () => {
- div.className = "noEsta"; */
 
 function mostrarRecetaPollo(){
   let contenedor = document.getElementById("contenedorReceta2");
   let ingrediente = document.getElementById("inputReceta");
+  contenedor.innerHTML = "" ;  
   let receta = recetasCerdo.filter(item => item.ingrediente === ingrediente);
   
    for (const receta of recetasPollo) {
@@ -143,7 +128,7 @@ function mostrarRecetaPollo(){
                    </div>`
    div.className = "contenedorReceta2";
    contenedor.append(div);
-   //contenedor.innerHTML = "" ;  
+  
    }
    }; 
 
@@ -151,6 +136,7 @@ function mostrarRecetaPollo(){
 function mostrarRecetaPescado(){
   let contenedor = document.getElementById("contenedorReceta3");
   let ingrediente = document.getElementById("inputReceta");
+  contenedor.innerHTML = "" ;  
   let receta = recetasCerdo.filter(item => item.ingrediente === ingrediente);
   
    for (const receta of recetasPescado) {
@@ -168,67 +154,6 @@ function mostrarRecetaPescado(){
                    </div>`
    div.className = "contenedorReceta3";
    contenedor.append(div); 
-  // contenedor.innerHTML = "" ;  
+ 
    }
    }; 
-//  mostrarRecetaCerdo();
-/* me falta terminar bien la funcionalidad, muestra lo que pido pero no como quiero... 
- function mostrarRecetas(){
- let botonCarne =  document.getElementById("btnCarne");
- let contenedorLista = document.getElementById("contenedorReceta")
- let boton1 = document.getElementById("contenedor1");
- let boton2 = document.getElementById("contenedor2");
- if(boton1.addEventListener ("click", muestraRecetasCerdo)){
-    muestraRecetasCerdo();
-  } else if(boton2.addEventListener("click", muestraRecetasPollo)){
-    muestraRecetasPollo()
-  }else if (botonCarne.addEventListener("click",()=>{
-        contenedorLista.innerText="";
-  })){
-}
-};
-
-mostrarRecetas()
-
-function muestraRecetasCerdo(){
-  let contenedorCerdo = document.getElementById("contenedorReceta");
-for (const recetas of recetasCerdo) {
-  let li = document.createElement("li");
-  li.innerHTML =  `<h2 id="titulo" >Receta ${recetas.id}: ${recetas.nombre}</h2>`
-  contenedorCerdo.append(li); 
-  
-  let div = document.createElement("div");
-   div.innerHTML =`<div id ="card">
-                  <div style="width: 18rem;">
-                  <img src= ${recetas.imagen} class="card-img-top" alt="...">
-                  <div class="card-body">
-                   <h5 class="card-title">Card title</h5>
-                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                   <a href="#" class="btn btn-primary">Go somewhere</a>
-                   </div>
-                  </div> 
-                  </div>`
- div.className = "noEsta";
- contenedorCerdo.append(div);      
- 
- let receta = document.getElementById("titulo");
- 
-  receta.addEventListener("mouseover", () => {
-   div.className = "noEsta";
- });
- 
- 
- receta.addEventListener("click", () => {
-  div.className = "esta";
-  
-}); 
- //receta.addEventListener("click", () => {
- // div.className = "esta";
-
-}
-}
-};*/
- 
-
-  
-  

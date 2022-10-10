@@ -1,8 +1,5 @@
 
-    /*const contenedor = document.getElementById("contenedor");
-  fetch('./recetasCerdo.json')
- .then((response) => response.json())
- .then((data) => { */
+   
   
     const detallarReceta = async () => {
       const resp = await
@@ -23,26 +20,40 @@
        <tr>${data[0].Ingredientes[2]}</tr>
        <tr>${data[0].Cantidad[2]}</tr>
        <h3>Procedimiento:</h3> 
-       <p class="procedimiento" >${data[0].Procedimiento}</p> 
+       <p  >${data[0].Procedimiento}</p> 
        </th>
       
-       "<img id="detalleReceta"src ='${data[0].imagen}'>"
+       "<img src ='${data[0].imagen}'>"
       
-       
+     
        `;
      
       contenedor.append(div) 
-    }
+      
+      let guardarReceta = document.createElement("button");
+      guardarReceta.innerText = "Guardar recetas";
+      guardarReceta.className = "guardarReceta";
+      contenedor.append(guardarReceta); 
+
+      guardarReceta.addEventListener("click",()=>{
+    
+      localStorage.setItem("data[0]",JSON.stringify(data[0])) 
+      })
+
+      function obtener_LocalStorage(){
+        if(localStorage.getItem("data[0]")){;
+        let receta = localStorage.getItem("data[0]");
+        let data = JSON.parse(receta)
+        console.log(data);
         
-  detallarReceta()  
- //});
+      }else{
+        console.log("no hay entradas en el local");
+      }
+   }  
+   obtener_LocalStorage()
+  }
+  detallarReceta() 
+  
+ 
 
 
-  function saludar(){
-  console.log("Hola guardar")
- };
-
- const boton = document.getElementById("btn-guardar")
-  boton.addEventListener("click",saludar);
-
-  saludar() 
