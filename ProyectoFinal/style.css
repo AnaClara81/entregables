@@ -93,16 +93,33 @@ color:white ;
     background-color: aqua;
    width:45%;
    height:60%;
-   display: inline-block;
-  
+   
+  display:inline-block
 }
 
 #contenedorGuardada1 {
-    background-color:burlywood;
-    width:45%;
-    height:60%;
-    display: inline-block;
- }
+    background-color:darksalmon;
+   width:45%;
+   height:60%;
+   
+  display:inline-block
+}
+
+#contenedorGuardada2 {
+    background-color:darkseagreen;
+   width:45%;
+   height:60%;
+   
+  display:inline-block
+}
+
+#contenedorGuardada3 {
+    background-color:khaki;
+   width:45%;
+   height:60%;
+   
+  display:inline-block
+}
 img{
     max-width:70%;
     max-height: 70%;
@@ -122,3 +139,11 @@ img{
     height: 250px;
    margin-left: 20px;
    }
+
+   .buttonBorrar{
+    display: block;
+   }
+
+ /*  .buttonBorrarSeVe{
+    display: block;
+   } */

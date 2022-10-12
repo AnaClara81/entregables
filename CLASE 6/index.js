@@ -14,11 +14,11 @@ for(let index = 0; index < 5; index++){
 
 /*const arreglo3 = ["andres", "joan", "mariana", "juaco"];
 
-//for(let index = 0; index < arreglo3.length; index++){
-//   console.log(arreglo3[index].toLocaleUpperCase());
-//}
+for(let index = 0; index < arreglo3.length; index++){
+   console.log(arreglo3[index].toLocaleUpperCase());
+}*/
 //push agrega elementos al final
-arreglo3.push("camila");
+/*arreglo3.push("camila");
 console.log(arreglo3.length);
 console.log(arreglo3);
 
@@ -135,7 +135,7 @@ for (const item of productos){
 
 
 
-class Producto{
+/* class Producto{
     constructor(nombre, precio){
       this.nombre = nombre;
       this.precio = precio;
@@ -153,4 +153,11 @@ class Producto{
   }
   
   console.log(array);
-  
+   */
+
+
+  const myCarouselElement = document.querySelector('#myCarousel')
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  wrap: false
+})

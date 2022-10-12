@@ -1,9 +1,6 @@
-
-   
-  
-    const detallarReceta = async () => {
+const detallarReceta = async () => {
       const resp = await
-      fetch('./recetasCerdo.json')
+      fetch ('./recetasCerdo.json')
       const data = await resp.json()
       
         const div = document.createElement('div')
