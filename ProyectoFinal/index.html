@@ -10,8 +10,9 @@
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/f580711539.js" crossorigin="anonymous"></script>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <title>Pagina principal</title>
   </head>
-<body>
+<body id="body">
   <div id="principio" class ="img-fluid">
    <div><h1 class="tituloPrincipal">Que cocinamos hoy?</h1></div>
   </div>
@@ -24,7 +25,7 @@
                   <a id="btnCarne" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mi cuenta </a>
                   <ul class="dropdown-menu">
                     <li><a href="cuenta.html" class="dropdown-item">Crear cuenta</a></li>
-                    <li><a href="recetasGuardadas/recetasGuardadas.html" class="dropdown-item">Recetas Guardadas</a></li>
+                    <li><a href="./recetasGuardadas/guardadas.html" class="dropdown-item">Recetas Guardadas</a></li>
                    
 
                     
@@ -44,8 +45,8 @@
                     <li><button id ="contenedor1" class="dropdown-item" href="#">Cerdo</button>
                       
                     </li>
-                    <li><button id ="contenedor2" class="dropdown-item" href="#">Pollo</button></li>
-                   
+                   <!--  <li><button id ="contenedor2" class="dropdown-item" href="./recetario/recetasPollo.html">Pollo</button></li> -->
+                    <li><a href="./recetario/recetasPollo.html" class="dropdown-item">Pollo</a></li>
                     <li><a id ="contenedor3" class="dropdown-item" href="#">Pescado</a></li>
                   </ul>
                 </li>
@@ -55,7 +56,6 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Verduras</a></li>
-                    <li><a class="dropdown-item" href="#">Legumbres</a></li>
                     <li><a class="dropdown-item" href="#">Pastas</a></li>
                     <li><a class="dropdown-item" href="#">Arroces</a></li>
                   </ul>
@@ -67,7 +67,6 @@
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Mouses</a></li>
                     <li><a class="dropdown-item" href="#">Tartas y tortas</a></li>
-                    <li><a class="dropdown-item" href="#">Horneados</a></li>
                     <li><a class="dropdown-item" href="#">Individuales</a></li>
                   </ul>
                 </li>
@@ -77,13 +76,11 @@
             </div>
           </div>
           <div>
-            <form  id="formularioReceta"  role="search">
+            <form  id="formularioReceta"  class="formularioReceta" role="search">
               <input id="inputReceta" class="buscar" type="search" placeholder="Ingrediente " aria-label="Search">
               <button id="buscar" class="btn btn-success" type="submit">Buscar</button>
            </form>
-           <div id="recetaSugerida">
-            <div class="recetaSugerida">
-          </div>
+           
         </nav>
 <div id="contenedorReceta1"></div> 
 <div id="contenedorReceta2"></div> 
@@ -145,13 +142,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./recetasTodas.js"></script>
-    <script src="./recetario/bife.js"></script>
-    <script src="./recetario/carneSalsa.js"></script>
-    <script src="./recetario/bife.html"></script>
+   
+   
   <script src="./index.js"></script> 
    
-
+ <script src="./recetasTodas.js"></script> 
   
   </body>
 </html>

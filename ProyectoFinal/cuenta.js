@@ -30,19 +30,19 @@ function getUsuarios(){
 
 function guardar_localStorage(usuarios){
     let lista =  getUsuarios();
-    localStorage.setItem("listaUsuarios",JSON.stringify (usuarios));
-    localStorage.setItem("nuevoUsuario", JSON.stringify(usuarios));
+  localStorage.setItem("listaUsuarios",JSON.stringify (usuarios));
+ localStorage.setItem("nuevoUsuario", JSON.stringify(usuarios));
 }
 
 
 
 
 imprimirUsuarios()    
-//funcionalidad de crear cuenta
+
     
   let btnGuardarUsuario = document.getElementById("btn-guardarUsuario")
     btnGuardarUsuario.addEventListener("click",guardarUsuario);
-  imprimirUsuarios()    
+ // imprimirUsuarios()    
     
     function guardarUsuario(e){
        e.preventDefault();
@@ -64,8 +64,7 @@ imprimirUsuarios()
       })
       
       inputForm.reset();
-    //  alert(`Bienvenid@ ${nombre} tu cuenta se creo correctamente`)
-      // imprimirUsuarios()
+    
     };  
 
 
@@ -73,10 +72,8 @@ imprimirUsuarios()
        let lista =  getUsuarios();
         tbody = document.querySelector("#tablaUsuarios tbody");
         
-        //tbody.innerHTML = "";
-
         for(let i = 0; i< lista.length; i++){
-          let row = tbody.insertRow(i);
+              let row = tbody.insertRow(i);
               nombreCell = row.insertCell(0);
               apellidoCell = row.insertCell(1);
               emailCell = row.insertCell(2);
@@ -87,10 +84,7 @@ imprimirUsuarios()
             emailCell.innerHTML = lista[i].email;
             passwordCell.innerHTML = lista[i].password;
 
-
-
-
-          tbody.appendChild(row);
+           tbody.appendChild(row);
         }
       };
        

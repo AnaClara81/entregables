@@ -1,0 +1,1 @@
+mostrarReceta(arregloRecetasPollo[2]);
