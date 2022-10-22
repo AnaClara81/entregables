@@ -1,0 +1,51 @@
+[
+    {"id": 1, 
+    "nombre":"Lasagna",
+    "ingredientes":[
+      "laminas de pasta","jamon cocido","muzzarella","acelga hervida","salsa" ],
+     "cantidad":[
+       12,"250 gr","200 gr","300 gr", "500cc"
+    ],
+    "procedimiento":"is simply dummy text of the printing and typesetting industry.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). ", 
+    "imagen":"../../imagenesPastas/lasagna.jpg",
+   "pagina":"../../index.html"
+    },
+    
+      {"id": 2, 
+      "nombre":"Penne rigatti al pesto",
+      "ingredientes":[
+                  "Pasta seca","albahaca", "ajo","tomates secos","aceite oliva" ],
+      "cantidad":[ 
+                 "1 paquete ", "1 atado", "2 dientes","100 gr","50 cc" ],
+      "procedimiento":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.", 
+      "imagen":"../../imagenesPastas/rigatti.jpg" ,
+     "pagina":"../../index.html"
+      },
+     
+      {"id": 3,
+       "nombre":"Tallarines con manteca de salvia",
+       "ingredientes":[
+           "Tallarines", "manteca", "salvia","sal","pimienta" ],
+       "cantidad":[
+         "1kg", "300 gr", "a gusto" ,"a gusto","a gusto"],
+       "procedimiento":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). ",
+        "imagen":"../../imagenesPastas/tallarines.jpg",
+       "pagina":"../../index.html"
+        },
+    
+      {"id": 4,
+       "nombre":"Tortellini a la parisienne",
+        "ingredientes":[
+          "Pasta rellena","jamon cocido", "ajo", "perejil"], 
+        "cantidad":[
+          "1 KG", "200 gr","4 dientes", "1 atado"], 
+        "procedimiento":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        "imagen":"../../imagenesPastas/tortellini.jpg",
+       "pagina":"../../index.html"
+      }
+  
+  
+      
+    ]
+    
+  

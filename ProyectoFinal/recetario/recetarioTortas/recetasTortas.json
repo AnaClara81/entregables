@@ -1,0 +1,51 @@
+[
+
+{"id": 1, 
+"nombre":"Crumble de ciruelas",
+"ingredientes":[
+  "Ciruelas ","azucar","masa sable","nueces","manteca" ],
+ "cantidad":[
+   "1 kg","300gr","500gr ","a gusto","50 gr"
+],
+"procedimiento":"is simply dummy text of the printing and typesetting industry.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). ", 
+"imagen":"../../imagenesTortas/ciruela.jpg",
+"pagina":"../../index.html"
+},
+
+  {"id": 2, 
+  "nombre":"Torta Coffee",
+  "ingredientes":[
+              "Biscochuelo chocolate","crema", "cafe soluble","azucar","almibar" ],
+  "cantidad":[ 
+             1,"200gr", "4 cdas","150gr","a gusto" ],
+  "procedimiento":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.", 
+  "imagen":"../../imagenesTortas/coffee.jpg" ,
+  "pagina":"../../index.html"
+  },
+ 
+  {"id": 3,
+   "nombre":"Torta de frutos rojos",
+   "ingredientes":[
+       "Crema chantilly", "mermelada frutos rojo", "crema","gelatina sin sabor","frutos frescos" ],
+   "cantidad":[
+       " 500 gr","400gr","300cc","10gr", "medio kilo"],
+   "procedimiento":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). ",
+    "imagen":"../../imagenesTortas/frutosRojos.jpg",
+    "pagina":"../../index.html"
+    },
+
+  {"id": 4,
+   "nombre": "Pavlova",
+    "ingredientes":[
+      "Merengue","crema", "vainilla", "frutas a eleccion ","hojas de menta"], 
+    "cantidad":[
+      2, "2 potes", "1 vaina ", "1 kg", "a gusto"], 
+    "procedimiento":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+    "imagen":"../../imagenesTortas/pavlova.jpg",
+    "pagina":"../../index.html"
+  }
+
+
+  
+]
+

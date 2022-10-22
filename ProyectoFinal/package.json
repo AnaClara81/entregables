@@ -1,0 +1,11 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "Pagina de recetas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eceiza Ana Clara",
+  "license": "ISC"
+}

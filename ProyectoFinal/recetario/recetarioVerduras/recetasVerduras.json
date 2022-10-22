@@ -1,0 +1,51 @@
+[
+    {"id": 1, 
+    "nombre":"Esparragos grillados",
+    "ingredientes":[
+      "Esparragos","sal","pimienta","manteca","huevos" ],
+     "cantidad":[
+       "2 atados","2gr","a gusto","100gr",6
+    ],
+    "procedimiento":"is simply dummy text of the printing and typesetting industry.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). ", 
+    "imagen":"../../imagenesVerduras/esparragos.jpg",
+    "pagina":"../../index.html"
+    },
+    
+      {"id": 2, 
+      "nombre":"Ensalada verde",
+      "ingredientes":[
+                  "Lechuga","rucula", "hierbas","limon","aceite oliva" ],
+      "cantidad":[ 
+                 "1 planta ", "1 atado", "a gusto",1,"50 cc" ],
+      "procedimiento":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.", 
+      "imagen":"../../imagenesVerduras/lechugas.jpg" ,
+      "pagina":"../../index.html"
+      },
+     
+      {"id": 3,
+       "nombre":"Palta rellena",
+       "ingredientes":[
+           "Paltas", "sal", "pimienta","huevos","pan rayado" ],
+       "cantidad":[
+         4, "2gr", "a gusto" ,"3","medio Kg"],
+       "procedimiento":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). ",
+        "imagen":"../../imagenesVerduras/palta.jpg",
+        "pagina":"../../index.html"
+        },
+    
+      {"id": 4,
+       "nombre":"Papines a la provenzal",
+        "ingredientes":[
+          "Papines","aceite oliva", "ajo", "perejil"], 
+        "cantidad":[
+          "1 KG", "100cc","4 dientes", "1 atado"], 
+        "procedimiento":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+        "imagen":"../../imagenesVerduras/papines.jpg",
+        "pagina":"../../index.html"
+      }
+  
+  
+      
+    ]
+    
+  

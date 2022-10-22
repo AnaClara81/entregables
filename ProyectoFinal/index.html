@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/f580711539.js" crossorigin="anonymous"></script>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   
    <title>Pagina principal</title>
   </head>
 <body id="body">
@@ -42,12 +43,11 @@
                     Carnes
                   </a>
                   <ul class="dropdown-menu">
-                    <li><button id ="contenedor1" class="dropdown-item" href="#">Cerdo</button>
-                      
-                    </li>
-                   <!--  <li><button id ="contenedor2" class="dropdown-item" href="./recetario/recetasPollo.html">Pollo</button></li> -->
-                    <li><a href="./recetario/recetasPollo.html" class="dropdown-item">Pollo</a></li>
-                    <li><a id ="contenedor3" class="dropdown-item" href="#">Pescado</a></li>
+                    
+                     <li><a href="../ProyectoFinal/recetario/recetarioCerdo/recetasCerdo.html" class="dropdown-item">Cerdo</a></li>
+                     <li><a href="../ProyectoFinal/recetario/recetarioPollo/recetasPollo.html" class="dropdown-item">Pollo</a></li>
+                    <li><a href="../ProyectoFinal/recetario/recetarioPescado/recetasPescado.html" class="dropdown-item">Pescado</a></li>
+                    
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -55,9 +55,9 @@
                    Guarniciones
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Verduras</a></li>
-                    <li><a class="dropdown-item" href="#">Pastas</a></li>
-                    <li><a class="dropdown-item" href="#">Arroces</a></li>
+                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioVerduras/recetasVerduras.html">Verduras</a></li>
+                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioPastas/recetasPastas.html">Pastas</a></li>
+                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioArroces/recetasArroz.html">Arroces</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -65,9 +65,9 @@
                     Postres
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mouses</a></li>
-                    <li><a class="dropdown-item" href="#">Tartas y tortas</a></li>
-                    <li><a class="dropdown-item" href="#">Individuales</a></li>
+                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioMousse/recetasMousse.html">Mouses</a></li>
+                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioPostres/recetasPostres.html">Postres</a></li>
+                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioTortas/recetasTortas.html">Tortas</a></li>
                   </ul>
                 </li>
                
@@ -77,14 +77,40 @@
           </div>
           <div>
             <form  id="formularioReceta"  class="formularioReceta" role="search">
-              <input id="inputReceta" class="buscar" type="search" placeholder="Ingrediente " aria-label="Search">
-              <button id="buscar" class="btn btn-success" type="submit">Buscar</button>
+            <div  class="input-group">
+                <select class="form-select" id="opciones" aria-label="Example select with button addon">
+                  <!-- <option selected>Recetas con...</option> -->
+                  <option class="ingrediente"value="0"></option>
+                  <option class="ingrediente"value="1"role="search">Cerdo</option>
+                  <option class="ingrediente"value="2">Pollo</option>
+                  <option class="ingrediente"value="3">Pescado</option>
+                  <option class="ingrediente"value="3">Verduras</option>
+                </select>
+                <button id ="btn_buscar" class="btn btn-success" type="submit">Buscar</button>
+              </div>
+             
            </form>
-           
+          
         </nav>
-<div id="contenedorReceta1"></div> 
-<div id="contenedorReceta2"></div> 
-<div id="contenedorReceta3"></div> 
+        <div id="contenedor">
+            <div id="contenedor1">
+             <!--  <p>contenedor 1</p>
+              <h2>recetas de cerdo</h2> -->
+            </div>  
+            <div id="contenedor2">
+             <!--  <p>contenedor 2</p>
+              <h2>recetas de pollo</h2> -->
+            </div> 
+            <div id="contenedor3">
+              <!-- <p>contenedor 3</p>
+              <h2>recetas de pescado</h2> -->
+            </div> 
+            <div id="contenedor4">
+            <!--   <p>contenedor 4</p>
+              <h2>recetas de verduras</h2> -->
+            </div> 
+        </div>
+
 <div id="cursos">
    <a href="./carrito/cursos.html" class="btn btn-light"><h1>Cursos</h1></a>
           
@@ -144,9 +170,11 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    
    
-  <script src="./index.js"></script> 
+ 
    
- <script src="./recetasTodas.js"></script> 
-  
+   
+   <script type="text/javascript" src="./funciones.js"></script>
+  <!--   <script src="./recetasTodas.js"></script>   -->
+ <script type="text/javascript" src="./index.js"></script> 
   </body>
 </html>

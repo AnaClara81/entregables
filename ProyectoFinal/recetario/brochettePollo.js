@@ -1,1 +1,0 @@
-mostrarReceta(arregloRecetasPollo[3]);
