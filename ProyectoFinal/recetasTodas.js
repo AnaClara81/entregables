@@ -3,7 +3,7 @@ recetas=[
 recetasCerdo = [
   {"id": 1, "nombre":"Bife", "procedimiento":"Salpimentar la pieza de carne a gusto y cocinar a la plancha ", "imagen":"./imagenesCerdo/bife.jpg", "pagina":"./recetario/recetarioCerdo/bife.html"},
   {"id": 2, "nombre":"Carne con salsa","procedimiento":"Sellar la carne, levantar el fondo de coccion con un vaso de vino blanco,agregar caldo y cocinar a fuego bajo 1 hr.Espesar la salsa","imagen":"./imagenesCerdo/carneSalsa.jpg", "pagina":"./recetario/recetarioCerdo/carneSalsa.html" },
-  {"id": 3, "nombre":"Carre laqueado ", "procedimiento":" Cocinar el carre de cerdo al horno con sal y pimienta tapado durante 45 minutos.Luego mjar con una mescla de miel, salsa de soja y vinagre y cocinar 15 minutos mas","imagen":"./imagenesCerdo/carre.jpg", "pagina":"./recetario/recetarioCerdo/carre.html"},
+  {"id": 3, "nombre":"Carre laqueado ", "procedimiento":" Cocinar el carre de cerdo al horno con sal y pimienta .Luego mojar con una mescla de miel, salsa de soja y vinagre y cocinar 15 minutos mas","imagen":"./imagenesCerdo/carre.jpg", "pagina":"./recetario/recetarioCerdo/carre.html"},
   {"id": 4, "nombre":"Costillitas ", "procedimiento":"Macerar la carne con aceite de oliva, perejil, ajo, sal y pimienta durante dos horas o mas en la heladera. Luego cocinar en plancha bien caliente","imagen":"./imagenesCerdo/costillitas.jpg", "pagina":"./recetario/recetarioCerdo/costillitas.html"},
 ],
 
@@ -19,7 +19,7 @@ recetasPescado = [
  {"id": 1, "nombre": "Pescado al horno con limon", "procedimiento":"Salpimentar la pieza a gusto y cocinar al horno durante media hora ", "imagen":"./imagenesPescado/pescadoLimon.jpg","pagina":"../recetario/recetarioPescado/pescadoLimon.html" },
  {"id": 2, "nombre":"Fish and chips","procedimiento":"Filet de pescado  pasados por harina y fritos con papas","imagen":"./imagenesPescado/pescadoFrito.jpg","pagina":"../recetario/recetarioPescado/pescadoFrito.html" },
  {"id": 3, "nombre":"Salmon a la plancha ", "procedimiento":"Salpimentar la enca de salmon y cocinar a la plancha durante 8 minutos por lado","imagen":"./imagenesPescado/salmon.jpg","pagina":"../recetario/recetarioPescado/salmon.html"},
- {"id": 4, "nombre":"Besugo a la parrilla ", "procedimiento":"Macerar el pescado con aceite de oliva, perejil, ajo, sal , pimienta y limon.Luego colocar en la prensa para la parrilla o envolver en papel aluminio. Cocinar a la parrilla","imagen:src":"./imagenesPescado/pescadoParrilla.jpg","pagina":"../recetario/recetarioPescado/pescadoParrilla.html"},
+ {"id": 4, "nombre":"Besugo a la parrilla ", "procedimiento":"Macerar el pescado con aceite de oliva, perejil, ajo, sal , pimienta y limon.Luego colocar en la prensa para la parrilla o envolver en papel aluminio. Cocinar a la parrilla","imagen":"./imagenesPescado/pescadoParrilla.jpg","pagina":"../recetario/recetarioPescado/pescadoParrilla.html"},
 ],
  recetasVerduras = [
 {"id": 1, "nombre": "Esparragos grillados", "procedimiento":"Grillar con aceite caliene en plancha, salpimentar" , "imagen":"./imagenesVerduras/esparragos.jpg","pagina":"../recetario/esparragos.html" },
@@ -95,5 +95,9 @@ contenedor.innerHTML   =`<div id ="card">
 
       }
     };*/
-      mostrarRecetasBuscadas(recetasCerdo, contenedor1);
-      mostrarRecetasBuscadas(recetasPollo, contenedor2);
+    mostrarRecetasBuscadas(recetasPollo);
+    mostrarRecetasBuscadas(recetasCerdo);
+    mostrarRecetasBuscadas(recetasPescado);
+    mostrarRecetasBuscadas(recetasMousse);
+    mostrarRecetasBuscadas(recetasPostres);
+    mostrarRecetasBuscadas(recetasVerduras);

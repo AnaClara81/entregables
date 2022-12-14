@@ -1,8 +1,9 @@
-let carrito = [];
+
 const shopContent = document.getElementById("shopContent");
 const verCarrito =document.getElementById("verCarrito");
 const modalContainer =document.getElementById("modal-container");
 const cantidadCarrito =document.getElementById("cantidadCarrito");
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 productos.forEach((product)=>{
   let content = document.createElement("div");
@@ -41,6 +42,7 @@ productos.forEach((product)=>{
     precio: product.precio,
     cantidad: product.cantidad,
     
+    
   });
   Swal.fire({
     position: 'top-end',
@@ -49,13 +51,23 @@ productos.forEach((product)=>{
     showConfirmButton: false,
     timer: 1000,
   })
+  
 }
-  console.log(carrito);
-  carritoCounter();
- })
+console.log(carrito);
+carritoCounter();
+saveLocalStorage();
+})
 });
 
 
+
+const saveLocalStorage = () =>{
+ localStorage.setItem("carrito",JSON.stringify(carrito));
+}
+
+
+
+  
 
 
 

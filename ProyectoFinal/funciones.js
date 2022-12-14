@@ -71,10 +71,13 @@ contenedor.append(div);
  
  function mostrarRecetasBuscadas(recetas, contenedor){
        for(recetas of recetas){
+ let contenedorGral = document.createElement("div")
  let contenedor = document.createElement("div");
+ //contenedorGral.className="contenedorGral"
+ contenedor.className ="contenedorBuscadas";
  contenedor.innerHTML   =`
-                          <div id ="contenedor"class ="card">
-                          <div style="width: 18rem;">
+                          <div >
+                          <div style="width: 15rem;">
                           <img src=${recetas.imagen}>
                           <div class="card-body">
                           <h5 class="card-title">${recetas.nombre}</h5>
@@ -85,13 +88,13 @@ contenedor.append(div);
                            </div>
                            </div>
                            `;
-                                 
-             document.body.appendChild(contenedor);     
- 
+                           document.body.append(contenedor);    
+                           //contenedorGral.append(contenedor)     
+            
+           
            }
          };
          
-           mostrarRecetasBuscadas(recetasCerdo, contenedor1);
-           mostrarRecetasBuscadas(recetasPollo, contenedor2);
-           mostrarRecetasBuscadas(recetasPescado, contenedor3)
           
+         mostrarRecetasBuscadas(recetasCerdo);
+    

@@ -26,11 +26,6 @@
                   <a id="btnCarne" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mi cuenta </a>
                   <ul class="dropdown-menu">
                     <li><a href="cuenta.html" class="dropdown-item">Crear cuenta</a></li>
-                    <li><a href="./recetasGuardadas/guardadas.html" class="dropdown-item">Recetas Guardadas</a></li>
-                   
-
-                    
-                    
                     </ul>
                   </li>
                   </ul>
@@ -44,9 +39,9 @@
                   </a>
                   <ul class="dropdown-menu">
                     
-                     <li><a href="../ProyectoFinal/recetario/recetarioCerdo/recetasCerdo.html" class="dropdown-item">Cerdo</a></li>
-                     <li><a href="../ProyectoFinal/recetario/recetarioPollo/recetasPollo.html" class="dropdown-item">Pollo</a></li>
-                    <li><a href="../ProyectoFinal/recetario/recetarioPescado/recetasPescado.html" class="dropdown-item">Pescado</a></li>
+                     <li><a href="recetario/recetarioCerdo/recetasCerdo.html" class="dropdown-item">Cerdo</a></li>
+                     <li><a href="recetario/recetarioPollo/recetasPollo.html" class="dropdown-item">Pollo</a></li>
+                    <li><a href="recetario/recetarioPescado/recetasPescado.html" class="dropdown-item">Pescado</a></li>
                     
                   </ul>
                 </li>
@@ -55,9 +50,9 @@
                    Guarniciones
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioVerduras/recetasVerduras.html">Verduras</a></li>
-                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioPastas/recetasPastas.html">Pastas</a></li>
-                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioArroces/recetasArroz.html">Arroces</a></li>
+                    <li><a class="dropdown-item" href="recetario/recetarioVerduras/recetasVerduras.html">Verduras</a></li>
+                    <li><a class="dropdown-item" href="recetario/recetarioPastas/recetasPastas.html">Pastas</a></li>
+                    <li><a class="dropdown-item" href="recetario/recetarioArroces/recetasArroz.html">Arroces</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -65,9 +60,9 @@
                     Postres
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioMousse/recetasMousse.html">Mouses</a></li>
-                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioPostres/recetasPostres.html">Postres</a></li>
-                    <li><a class="dropdown-item" href="../ProyectoFinal/recetario/recetarioTortas/recetasTortas.html">Tortas</a></li>
+                    <li><a class="dropdown-item" href="recetario/recetarioMousse/recetasMousse.html">Mouses</a></li>
+                    <li><a class="dropdown-item" href="recetario/recetarioPostres/recetasPostres.html">Postres</a></li>
+                    <li><a class="dropdown-item" href="recetario/recetarioTortas/recetasTortas.html">Tortas</a></li>
                   </ul>
                 </li>
                
@@ -76,40 +71,30 @@
             </div>
           </div>
           <div>
-            <form  id="formularioReceta"  class="formularioReceta" role="search">
+             <form  id="formularioReceta"  class="formularioReceta" role="search">
             <div  class="input-group">
                 <select class="form-select" id="opciones" aria-label="Example select with button addon">
-                  <!-- <option selected>Recetas con...</option> -->
+                  <option selected>Recetas con...</option> 
                   <option class="ingrediente"value="0"></option>
                   <option class="ingrediente"value="1"role="search">Cerdo</option>
                   <option class="ingrediente"value="2">Pollo</option>
                   <option class="ingrediente"value="3">Pescado</option>
-                  <option class="ingrediente"value="3">Verduras</option>
+                  <option class="ingrediente"value="4">Verduras</option>
+                  <option class="ingrediente"value="5">Pastas</option>
+                  <option class="ingrediente"value="6">Arroz</option>
+                  <option class="ingrediente"value="7">Mousses</option>
+                  <option class="ingrediente"value="8">Postres</option>
+                  <option class="ingrediente"value="9">Tortas</option>
+
                 </select>
                 <button id ="btn_buscar" class="btn btn-success" type="submit">Buscar</button>
               </div>
              
-           </form>
-          
+           </form> 
         </nav>
-        <div id="contenedor">
-            <div id="contenedor1">
-             <!--  <p>contenedor 1</p>
-              <h2>recetas de cerdo</h2> -->
-            </div>  
-            <div id="contenedor2">
-             <!--  <p>contenedor 2</p>
-              <h2>recetas de pollo</h2> -->
-            </div> 
-            <div id="contenedor3">
-              <!-- <p>contenedor 3</p>
-              <h2>recetas de pescado</h2> -->
-            </div> 
-            <div id="contenedor4">
-            <!--   <p>contenedor 4</p>
-              <h2>recetas de verduras</h2> -->
-            </div> 
-        </div>
+        <!-- <div class="contenedorBuscadas">
+
+        </div> -->
 
 <div id="cursos">
    <a href="./carrito/cursos.html" class="btn btn-light"><h1>Cursos</h1></a>
@@ -172,9 +157,12 @@
    
  
    
+    
+  
    
-   <script type="text/javascript" src="./funciones.js"></script>
-  <!--   <script src="./recetasTodas.js"></script>   -->
- <script type="text/javascript" src="./index.js"></script> 
+    <script type="text/javascript" src="/funciones.js"></script>
+    
+   <!--  <script type="text/javascript" src="/recetasTodas.js"></script>  -->
+    <script type="text/javascript" src="/index.js"></script>
   </body>
 </html>

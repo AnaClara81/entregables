@@ -183,6 +183,13 @@
     display: none;
    }
   
+   .sumar{
+    cursor:pointer;
+   }
+
+   .restar{
+    cursor:pointer;
+   }
    
    #footer{
     width: auto;
